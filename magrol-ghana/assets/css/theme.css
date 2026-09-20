@@ -1,0 +1,29 @@
+/* ==========================================================================
+   MAGROL GLOBAL — GHANA
+   theme.css : the only file that differs between the two regional sites.
+   Swap this file to re-skin. Everything structural lives in main.css.
+   ========================================================================== */
+
+:root {
+  /* --- Core ------------------------------------------------------------ */
+  --ink:        #000000;   /* type, rules, inverted panels                  */
+  --paper:      #ffffff;   /* page                                          */
+  --wash:       #f2f2ef;   /* quiet section fill                            */
+  --rule:       #d8d8d2;   /* hairlines                                     */
+  --haze:       #64646a;   /* secondary type                                */
+
+  /* --- Signal ----------------------------------------------------------- *
+   * Ghana is the import arm: cargo yellow. Active, industrial, mobile.
+   * This yellow is NOT legible as text on white, so --signal-type
+   * provides the darkened variant that can be read as type.              */
+  --signal:          #ffc400;   /* fill only, never text                     */
+  --signal-type:     #7a5900;   /* legible type colour on light backgrounds */
+  --signal-type-ink: #ffc400;   /* legible type colour on dark backgrounds  */
+  --signal-ink:      #000000;   /* the ONLY text permitted on --signal fill */
+  --signal-dim:      #fff8d6;   /* signal at 10% — tints, not type          */
+
+  /* --- Identity --------------------------------------------------------- */
+  --region-code:   "GH";
+  --region-name:   "Ghana";
+  --corridor-from: "TEMA PORT";
+}

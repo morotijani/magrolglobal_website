@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Magrol Global Ghana</title>
+<meta name="description" content="Send an import enquiry to Magrol Global Ghana for vehicles, Dubai property or bulk building materials from the UAE.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400..700&family=Martian+Mono:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/theme.css">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="strip">
+    <div class="shell strip__inner">
+      <div class="strip__readout">
+        <span class="strip__unit">Accra <b data-clock="Africa/Accra">—</b></span>
+        <span>/</span>
+        <span class="strip__unit">Import arm · Ghana</span>
+        <span>/</span>
+        <span class="strip__unit">Corridor AE &rarr; GH open</span>
+      </div>
+      <nav class="switch" aria-label="Choose region">
+        <a class="switch__opt" href="https://uae.magrolglobal.com/">AE Dubai</a>
+        <a class="switch__opt" href="index.html" aria-current="true">GH Accra</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="shell nav">
+    <a class="brand" href="index.html">
+      <span class="brand__flag" aria-hidden="true"></span>
+      Magrol Global
+      <span class="brand__tag">Ghana</span>
+    </a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="nav__toggle-label">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true"></span>
+    </button>
+    <nav id="nav-links" class="nav__links" data-open="false" aria-label="Main">
+      <a class="nav__link" href="index.html">Overview</a>
+      <a class="nav__link" href="services.html">Import services</a>
+      <a class="nav__link" href="about.html">About</a>
+      <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="shell">
+      <p class="eyebrow"><span class="eyebrow__code">03</span> Contact</p>
+      <h1 class="display display--h1 hero__title" style="max-width:12ch">
+        <span class="reveal-line"><span style="--i:0">Start your</span></span>
+        <span class="reveal-line"><span style="--i:1">import</span></span>
+      </h1>
+      <p class="lede hero__lede">
+        Give us the specifics and we will come back with a landed cost and a
+        realistic delivery date. Make, model and year. Area and budget.
+        Materials schedule and site date.
+      </p>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__drift">
+      <div class="ticker__track">
+        <div class="ticker__set">
+          <span>Car import</span><span class="ticker__pip"></span>
+          <span>Dubai property</span><span class="ticker__pip"></span>
+          <span>Building materials</span><span class="ticker__pip"></span>
+          <span>Landed cost quoted</span><span class="ticker__pip"></span>
+        </div>
+        <div class="ticker__set">
+          <span>Car import</span><span class="ticker__pip"></span>
+          <span>Dubai property</span><span class="ticker__pip"></span>
+          <span>Building materials</span><span class="ticker__pip"></span>
+          <span>Landed cost quoted</span><span class="ticker__pip"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="band">
+    <div class="shell">
+      <div class="split split--wide">
+
+        <!-- ── Enquiry form ─────────────────────────────────────────── -->
+        <div>
+          <p class="eyebrow" style="margin-bottom:1.5rem"><span class="eyebrow__code">01</span> Import enquiry</p>
+
+          <!--
+            NOTE FOR DEPLOYMENT
+            This form validates in the browser and shows a confirmation. It does
+            not yet send anything. To make it live, either:
+              a) add   action="https://formspree.io/f/YOUR_ID" method="POST"
+                 to the <form> tag and delete the data-form attribute, or
+              b) point it at your own endpoint.
+          -->
+          <form class="form form--paired" data-form novalidate>
+            <div class="field">
+              <label for="f-name">Full name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+              <p class="field__err">Enter your name</p>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@company.com">
+              <p class="field__err">Enter a valid email address</p>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">Phone or WhatsApp</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="e.g. +233 …">
+            </div>
+
+            <div class="field">
+              <label for="f-interest">What are you importing</label>
+              <select id="f-interest" name="interest" required>
+                <option value="">Select a service</option>
+                <option>Car import from Dubai</option>
+                <option>Dubai real estate investment</option>
+                <option>Building materials — bulk supply</option>
+                <option>Multiple categories</option>
+                <option>Something else</option>
+              </select>
+              <p class="field__err">Choose an option</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-detail">Details</label>
+              <textarea id="f-detail" name="detail" rows="4" required
+                placeholder="Make, model and year — or the area and budget for a property — or your materials schedule and the date you need it on site."></textarea>
+              <p class="field__err">Tell us a little about what you need</p>
+            </div>
+
+            <div class="field field--full">
+              <label for="f-city">Delivery city or region in Ghana</label>
+              <input id="f-city" name="city" type="text" placeholder="e.g. Accra, Kumasi, Takoradi">
+            </div>
+
+            <div class="form__foot">
+              <button class="btn btn--solid" type="submit">
+                <span>Send enquiry</span>
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </button>
+              <p class="mono muted" style="margin:0">We reply within one business day</p>
+            </div>
+          </form>
+
+          <div class="form__done" data-form-done>
+            <p class="eyebrow" style="margin-bottom:1.25rem"><span class="eyebrow__code">&#10003;</span> Enquiry sent</p>
+            <h2 class="display display--h3">Thank you — we have your details</h2>
+            <p class="prose muted" style="margin-top:.9rem">
+              Your reference is <strong data-form-ref>—</strong>. Our Accra team
+              will reply within one business day with availability and a landed
+              cost. If it is urgent, call the office directly.
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Direct details ───────────────────────────────────────── -->
+        <div>
+          <p class="eyebrow" style="margin-bottom:1.5rem"><span class="eyebrow__code">02</span> Direct</p>
+
+          <!-- REPLACE the placeholder contact details below with your real ones -->
+          <dl class="details">
+            <div class="details__row">
+              <dt class="details__k">Office</dt>
+              <dd class="details__v">Magrol Global Ghana<br>Accra, Ghana</dd>
+            </div>
+            <div class="details__row">
+              <dt class="details__k">Email</dt>
+              <dd class="details__v"><a href="mailto:ghana@magrolglobal.com">ghana@magrolglobal.com</a></dd>
+            </div>
+            <div class="details__row">
+              <dt class="details__k">Phone</dt>
+              <dd class="details__v"><a href="tel:+233000000000">+233 00 000 0000</a></dd>
+            </div>
+            <div class="details__row">
+              <dt class="details__k">Hours</dt>
+              <dd class="details__v">Monday to Saturday, 08:00 – 17:00 GMT</dd>
+            </div>
+            <div class="details__row">
+              <dt class="details__k">Headquarters</dt>
+              <dd class="details__v"><a href="https://uae.magrolglobal.com/">uae.magrolglobal.com</a></dd>
+            </div>
+          </dl>
+
+          <div class="frame frame--wide" style="margin-top:2.5rem" data-slot="Accra · Ghana" data-reveal>
+            <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&amp;fit=crop&amp;w=1000&amp;q=70"
+                 alt="Freight containers awaiting collection" loading="lazy" decoding="async" width="1000" height="562">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--ink">
+    <div class="shell">
+      <div class="split split--even" style="align-items:end">
+        <div class="stack" data-reveal>
+          <p class="eyebrow"><span class="eyebrow__code">AE</span> Based in the UAE?</p>
+          <p class="statement">Buying inside Dubai? Start on the <em>UAE</em> site.</p>
+        </div>
+        <div class="stack" data-reveal style="--delay:80ms">
+          <div class="prose muted">
+            <p>
+              Our Dubai headquarters handles local dealership, UAE property
+              transactions and materials supply within the Emirates.
+            </p>
+          </div>
+          <div class="hero__actions" style="margin-top:.5rem">
+            <a class="btn btn--solid" href="https://uae.magrolglobal.com/">
+              <span>Go to Magrol Dubai</span>
+              <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__top">
+    <div>
+      <p class="foot__wordmark">Magrol<br>Global</p>
+      <p class="mono muted" style="margin-top:1.5rem">Accra, Ghana</p>
+    </div>
+    <div class="foot__col">
+      <h3>Navigate</h3>
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="services.html">Import services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot__col">
+      <h3>Group</h3>
+      <ul>
+        <li><a href="https://uae.magrolglobal.com/">Magrol Global UAE</a></li>
+        <li><a href="index.html">Magrol Global Ghana</a></li>
+        <li><a href="services.html#automotive">Car import</a></li>
+        <li><a href="services.html#real-estate">Dubai property</a></li>
+        <li><a href="services.html#materials">Building materials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shell foot__base">
+    <p>&copy; <span data-year>2026</span> Magrol Global. All rights reserved.</p>
+    <p>Import arm &middot; Accra GH</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

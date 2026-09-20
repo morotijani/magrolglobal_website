@@ -1,0 +1,28 @@
+/* ==========================================================================
+   MAGROL GLOBAL — UAE
+   theme.css : the only file that differs between the two regional sites.
+   Swap this file to re-skin. Everything structural lives in main.css.
+   ========================================================================== */
+
+:root {
+  /* --- Core ------------------------------------------------------------ */
+  --ink:        #000000;   /* type, rules, inverted panels                  */
+  --paper:      #ffffff;   /* page                                          */
+  --wash:       #f2f2ef;   /* quiet section fill                            */
+  --rule:       #d8d8d2;   /* hairlines                                     */
+  --haze:       #64646a;   /* secondary type                                */
+
+  /* --- Signal ----------------------------------------------------------- *
+   * UAE is the headquarters: ultramarine. Institutional, capital, origin.
+   * --signal is a FILL colour. --signal-type is the legible text variant.  */
+  --signal:          #1a2bff;   /* fill only                                */
+  --signal-type:     #1a2bff;   /* legible type colour on light backgrounds */
+  --signal-type-ink: #8f99ff;   /* legible type colour on dark backgrounds  */
+  --signal-ink:      #ffffff;   /* the ONLY text permitted on --signal fill */
+  --signal-dim:      #d9dcff;   /* signal at 10% — tints, not type          */
+
+  /* --- Identity --------------------------------------------------------- */
+  --region-code:   "AE";
+  --region-name:   "United Arab Emirates";
+  --corridor-from: "JEBEL ALI";
+}
