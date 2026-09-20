@@ -216,12 +216,43 @@
       var slot = form.querySelector("[data-form-ref]");
       if (slot) slot.textContent = ref;
 
-      form.hidden = true;
-      if (done) {
-        done.setAttribute("data-visible", "true");
-        done.setAttribute("tabindex", "-1");
-        done.focus();
+      var formData = new FormData(form);
+      formData.append("ref", ref);
+      
+      var btn = form.querySelector('button[type="submit"]');
+      var originalBtnText = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.innerHTML = '<span>Sending...</span>';
+        btn.disabled = true;
       }
+
+      fetch('contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(function(response) {
+        if(response.ok) {
+          form.hidden = true;
+          if (done) {
+            done.setAttribute("data-visible", "true");
+            done.setAttribute("tabindex", "-1");
+            done.focus();
+          }
+        } else {
+          alert("Something went wrong. Please try again or contact us directly.");
+          if (btn) {
+            btn.innerHTML = originalBtnText;
+            btn.disabled = false;
+          }
+        }
+      })
+      .catch(function(error) {
+        alert("Network error. Please try again or contact us directly.");
+        if (btn) {
+          btn.innerHTML = originalBtnText;
+          btn.disabled = false;
+        }
+      });
     });
   }
 
