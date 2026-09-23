@@ -427,11 +427,11 @@ a:hover .frame img.is-loaded { transform: scale(1.035); }
     padding: 0;
     background: var(--ink);
     color: var(--paper);
-    transform: translateY(-101%);
+    transform: translateX(100%);
     transition: transform .5s cubic-bezier(.72, 0, .18, 1);
     overflow-y: auto;
   }
-  .nav__links[data-open="true"] { transform: translateY(0); }
+  .nav__links[data-open="true"] { transform: translateX(0); }
   .nav__link {
     padding: 1.35rem var(--gutter);
     border-bottom: 1px solid #2c2c30;
@@ -719,6 +719,10 @@ a:hover .frame img.is-loaded { transform: scale(1.035); }
 }
 .route__t { align-self: start; }
 .route__d { color: var(--haze); max-width: 52ch; }
+
+@media (max-width: 61.99rem) {
+  .route__d { grid-column: 1 / -1; margin-top: -0.5rem; }
+}
 
 /* --------------------------------------------------------------------------
    11. Figures / stat rows
