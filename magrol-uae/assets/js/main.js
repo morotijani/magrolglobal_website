@@ -274,6 +274,11 @@
           var alt = thumb.getAttribute("data-gallery-alt") || main.alt;
           if (!full) return;
           main.classList.remove("is-loaded");
+          
+          main.addEventListener("load", function () {
+            main.classList.add("is-loaded");
+          }, { once: true });
+          
           main.src = full;
           main.alt = alt;
           thumbs.forEach(function (t) { t.setAttribute("aria-current", "false"); });
